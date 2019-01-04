@@ -11,16 +11,15 @@ namespace CSharpAssignments6
 
       public static void Encrypt(string str1)
         {
-            StringBuilder newString = new StringBuilder();
             str1 = "Hola";
-          
             foreach(var chr in str1)
             {
-                 newString = chr + 1;
+                var newString = chr + 1;
+                newString = BitConverter.ToString(bytes);
                 Console.WriteLine(newString);
             }
+            
 
-           
         }
         
 
