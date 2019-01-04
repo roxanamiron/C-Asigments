@@ -23,12 +23,11 @@ namespace CSharpAssignments7
         private static void WorkingWithArrays()
         {
             int[] array = new int[10];
-            Random randomSize = new Random();
-            int no = randomSize.Next(50, 200);
+            Random randomSize = new Random();            
 
             for( int i = 0; i <= 9; i++)
-            {                
-                array[i] = i;
+            {
+                array[i] = randomSize.Next(50, 200);
             }
 
             foreach(int table in array)

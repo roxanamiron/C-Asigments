@@ -16,12 +16,11 @@ namespace CSharpAssignments2
             //by the same digits;
             //If no bigger number can be composed using those digits, return -1;
 
-            Console.WriteLine("Input a positive integer number to return the next bigger number formed by the same digits");
-            string stringNumber = Console.ReadLine();
+            Console.WriteLine("Positive integer number to return the next bigger number formed by the same digits");
+            //string stringNumber = "2017";
+            int[] array = { 2, 0, 1, 7 };
 
-            int biggerNumber = stringNumber.Length
-            Console.WriteLine(biggerNumber);
-
+        
 
             Console.ReadLine();
 
