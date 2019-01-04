@@ -26,8 +26,34 @@ namespace CSharpAssignments11
             //Number or command? sum
             //Sum = 14
             //Number or command ? -7
-            //Number or command? End
+            //Number or command? End         
 
+            string key;
+          Console.WriteLine("Number or command( Sum , View, End)?");
+
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Number or command( Sum , View, End)?");
+            double y = Convert.ToDouble(Console.ReadLine());
+            while (true)
+            {                
+                Console.WriteLine("Number or command( Sum , View, End)?");
+                string command = Console.ReadLine();
+                switch(command)
+                {
+                    case "sum":
+                        Console.WriteLine($"Sum = {x+y}");
+                        break;
+                    case "view":
+                        Console.WriteLine("entered numbers: ");
+                        Console.WriteLine($"{x},{y}");
+                        break;
+                    case "End":
+                        Environment.Exit(0);
+                        break;
+                }
+
+            }
+           
         }
     }
 }

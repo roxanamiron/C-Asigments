@@ -28,6 +28,7 @@ namespace CSharpAssignments10
                 }
             }
             return bracket.Count == 0;
+            
         }
        
     }
