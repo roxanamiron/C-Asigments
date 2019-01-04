@@ -20,6 +20,9 @@ namespace CSharpAssignments6
             //An example of use might be
             //string newText = Encrypter.Encrypt("Hola");
 
+            Encrypter.Encrypt("Hola");
+
+
         }
     }
 }

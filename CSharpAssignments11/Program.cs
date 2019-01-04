@@ -28,13 +28,13 @@ namespace CSharpAssignments11
             //Number or command ? -7
             //Number or command? End         
 
-            string key;
+           
           Console.WriteLine("Number or command( Sum , View, End)?");
-
+            bool end = false;
             double x = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Number or command( Sum , View, End)?");
             double y = Convert.ToDouble(Console.ReadLine());
-            while (true)
+            while (!end)
             {                
                 Console.WriteLine("Number or command( Sum , View, End)?");
                 string command = Console.ReadLine();
@@ -47,8 +47,9 @@ namespace CSharpAssignments11
                         Console.WriteLine("entered numbers: ");
                         Console.WriteLine($"{x},{y}");
                         break;
-                    case "End":
-                        Environment.Exit(0);
+                    case "end":
+                        //Environment.Exit(0);
+                        end = true;
                         break;
                 }
 
