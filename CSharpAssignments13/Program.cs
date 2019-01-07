@@ -25,5 +25,12 @@ namespace CSharpAssignments13
             //      </ html >
 
         }
+
+
+        public List<String> GetImagesPath(string currentDirectory)
+        {
+            return null;
+
+        }
     }
 }

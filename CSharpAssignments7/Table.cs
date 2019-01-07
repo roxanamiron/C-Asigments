@@ -22,9 +22,9 @@ namespace CSharpAssignments7
         {
         }
 
-        public virtual void ShowData(int width, int height)
+        public virtual void ShowData()
         {
-            Console.WriteLine("The width is {0} and the height is {1} of the table ",width,height);
+            Console.WriteLine("The width is {0} and the height is {1} of the table ",Width,Height);
         }
         
     }

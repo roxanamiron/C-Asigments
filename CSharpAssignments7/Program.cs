@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpAssignments7
 {
-    class Program
+    static class Program
     {
+        static Random randomSize = new Random();            
+
         static void Main(string[] args)
         {
             //7. Create a class named "Table". 
@@ -15,31 +17,30 @@ namespace CSharpAssignments7
             //which will write on the screen the width and that height of the table. Create an array containing 10 tables, 
             //with random sizes between 50 and 200 cm, and display all the data.
 
-            WorkingWithOOP();
+          
             WorkingWithArrays();
             Console.ReadLine();
         }
 
         private static void WorkingWithArrays()
         {
-            int[] array = new int[10];
-            Random randomSize = new Random();            
+            Table[] array = new Table[10];
 
             for( int i = 0; i <= 9; i++)
             {
-                array[i] = randomSize.Next(50, 200);
-            }
-
-            foreach(int table in array)
-            {
-                Console.WriteLine(table);
-            }
+                var newTable = createTable();
+                array[i] = newTable;
+                array[i].ShowData();
+            }            
         }
 
-        private static void WorkingWithOOP()
+        private static Table createTable()
         {
-            Table table = new Table();
-            table.ShowData(45, 26);
+            var wedth = randomSize.Next(50, 200);
+            var height = randomSize.Next(50, 200);
+
+            Table table = new Table(wedth,height);
+            return table;
 
         }
     }

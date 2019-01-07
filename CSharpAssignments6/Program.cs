@@ -21,6 +21,7 @@ namespace CSharpAssignments6
             //string newText = Encrypter.Encrypt("Hola");
 
             Encrypter.Encrypt("Hola");
+            Encrypter.Decrypt("Hola");
 
 
         }
