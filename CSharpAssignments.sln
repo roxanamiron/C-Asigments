@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAssignments12", "CSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAssignments13", "CSharpAssignments13\CSharpAssignments13.csproj", "{76916EC7-6324-48B2-A2E1-B3E99510BFAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpAssignments14", "CSharpAssignments14\CSharpAssignments14.csproj", "{6B679373-3A6D-461E-9354-5DAF69CCC336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{76916EC7-6324-48B2-A2E1-B3E99510BFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76916EC7-6324-48B2-A2E1-B3E99510BFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76916EC7-6324-48B2-A2E1-B3E99510BFAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B679373-3A6D-461E-9354-5DAF69CCC336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B679373-3A6D-461E-9354-5DAF69CCC336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B679373-3A6D-461E-9354-5DAF69CCC336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B679373-3A6D-461E-9354-5DAF69CCC336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

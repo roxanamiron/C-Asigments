@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76916EC7-6324-48B2-A2E1-B3E99510BFAC}</ProjectGuid>
+    <ProjectGuid>{6B679373-3A6D-461E-9354-5DAF69CCC336}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpAssignments13</RootNamespace>
-    <AssemblyName>CSharpAssignments13</AssemblyName>
+    <RootNamespace>CSharpAssignments14</RootNamespace>
+    <AssemblyName>CSharpAssignments14</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,10 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Constellation.Html, Version=1.6.5305.21588, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Constellation.Html.1.6.5305.21588\lib\net45\Constellation.Html.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,11 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Instructions\Constellation.Html.Instructions.txt" />
-    <Content Include="License\Constellation.Html.License.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

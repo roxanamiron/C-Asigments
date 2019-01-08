@@ -12,9 +12,9 @@ namespace CSharpAssignments9
         Table table = new Table();
        
         
-        public override void ShowData(int width, int height)
+        public void ShowData(int width, int height)
         {
-            table.ShowData(45, 25);
+            table.ShowData();
             Console.WriteLine("Coffee table");
         }
 

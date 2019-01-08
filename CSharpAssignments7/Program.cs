@@ -18,11 +18,11 @@ namespace CSharpAssignments7
             //with random sizes between 50 and 200 cm, and display all the data.
 
           
-            WorkingWithArrays();
+            workingWithArrays();
             Console.ReadLine();
         }
 
-        private static void WorkingWithArrays()
+        private static void workingWithArrays()
         {
             Table[] array = new Table[10];
 
