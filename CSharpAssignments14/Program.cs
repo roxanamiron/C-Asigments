@@ -53,7 +53,7 @@ namespace CSharpAssignments14
             var exeptElement = list.Take(list.Count() - 90);
             Console.WriteLine($"All elements except the 10 - th : {exeptElement}");
 
-
+            Console.WriteLine();
 
             Console.ReadLine();
         }
