@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace CSharpAssignments14
 {
     public class Program
     {
+        static IEnumerable<int> list = Enumerable.Range(1, 100);
         static void Main(string[] args)
         {
             //Create a list with numbers from 1 to 100.
@@ -19,44 +21,102 @@ namespace CSharpAssignments14
             //5) Elements from 80 - 90
             //6) All elements except the 10 - th
 
+            //firstElement();
 
+            //fifthElement();
 
-            IEnumerable<int> list = Enumerable.Range(1, 100);
+            //evenNumbers();
 
-            //foreach(int no in list)
-            //{
-            //    Console.WriteLine(no);
-            //}
+            //firstTen();
 
-            var firstelement = list.First();
-            Console.WriteLine($"First Element : {firstelement}");
+            //otherNumbers();
 
-            var fifthElement = list.Take(5).ToList();
-            Console.WriteLine($"The 5-th elements {fifthElement}");
+            //elementsFrom11();
 
-            var evenNumbers = list.Select(x => x % 2 == 0);
-            foreach(var numb in evenNumbers)
-            {
-                Console.WriteLine(numb);
-            }
-            
-            var firstTen = list.Take(10);
-            Console.WriteLine($"First 10 numbers are :{firstTen}");
+            //exeptElement();
 
-            var otherNumbers = from values in list
-                               where (values >= 80 && values <= 90)
-                               select new { ValuesBetween = values };
-            var otherNumbers2 = list.LongCount(x => 80 >= 90);
-            Console.WriteLine($"Elements from 80 - 90 : {otherNumbers}");
-
-
-            var exeptElement = list.Take(list.Count() - 90);
-            Console.WriteLine($"All elements except the 10 - th : {exeptElement}");
-
-            Console.WriteLine();
+            divideByTen();
+           
 
             Console.ReadLine();
         }
 
+        private static void divideByTen()
+        {
+            var result = list.FirstOrDefault(x => x % 10 == 0);
+
+            Console.WriteLine("first element: {0}", result);
+        }
+
+        private static void elementsFrom11()
+        {
+            var list2 = list.Skip(10);
+            foreach (var numb in list2)
+            {
+                Console.WriteLine(numb);
+            }
+        }
+
+        static void firstElement()
+        {
+
+            var firstelement = list.First();
+
+            //foreach (int no in firstelement)
+            {
+                Console.WriteLine("first element: {0}", firstelement);
+            }
+        }
+
+        static void fifthElement()
+        {
+            var fifthElement = list.ElementAt(4);
+
+            Console.WriteLine($"The 5-th elements {fifthElement}");
+
+
+        }
+
+        static void evenNumbers()
+        {
+            var evenNumbers = list.Where(x => x % 2 == 0);
+            foreach (var numb in evenNumbers)
+            {
+                Console.WriteLine(numb);
+            }
+        }
+
+        static void firstTen()
+        {
+            var firstTen = list.Take(10);
+            foreach (var x in firstTen)
+            {
+                Console.WriteLine($"First 10 numbers are :{x}");
+            }
+
+        }
+
+        static void otherNumbers()
+        {
+            var otherNumbers = list.Skip(79).Take(10);
+            foreach (var other in otherNumbers)
+            {
+                Console.WriteLine($"Elements from 80 - 90 : {other}");
+            }
+
+        }
+
+        static void exeptElement()
+        {
+            var list1 = list.Take(9).Union(list.Skip(10));
+            
+            //int[] no = { 10 };
+            //IEnumerable<int> exeptElement = list.Except(no);
+            foreach (var ex in list1)
+            {
+                Console.WriteLine($"All elements except the 10 - th : {ex}");
+            }
+
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ namespace CSharpAssignments13
 {
     class Program
     {
-         
+
         private static string result;
 
         static void Main(string[] args)
@@ -27,19 +28,23 @@ namespace CSharpAssignments13
             //      </ html >
 
             // Get the directories currently on the C drive.
-            
 
-        displayFile();
-        Console.ReadLine();
+            
+            displayFile();
+            Console.ReadLine();
         }
 
-        private static void displayFile()
+        private static void displayFile(List<string>list)
         {
             var display = getFiles();
-            Console.WriteLine(display);
+            foreach (var element in display)
+            {
+                Console.WriteLine(display);
+            }
+
         }
 
-        public static string getImagesPath()
+        public static string getImagesPath(List<string> list)
         {
             string fileResult;
             string path = @"F:\file.html";
@@ -52,36 +57,50 @@ namespace CSharpAssignments13
 
             //creaza fisierului
             FileStream file = new FileStream(path, FileMode.Create);
-            
-          //scrie toate liniile in fisier
-                using (StreamWriter streamWriter = new StreamWriter(file))
+
+            var listImage = new List<string>();
+            listImage.Add(pathImage1);
+            listImage.Add(pathImage2);
+
+            //scrie toate liniile in fisier
+            using (StreamWriter streamWriter = new StreamWriter(file))
+            {
+                streamWriter.WriteLine("<html>");
+                streamWriter.WriteLine("<body>");
+
+                //trebuie facut un for pt primele 2
+                for(int i = 0; i < 2; i++)
                 {
-                    streamWriter.WriteLine("<html>");
-                    streamWriter.WriteLine("<body>");
-                    streamWriter.WriteLine(imageValue2);
-                    streamWriter.WriteLine(imageValue1);
-                    streamWriter.WriteLine(imageValue4);
-                    streamWriter.WriteLine(imageValue3);
-                    streamWriter.WriteLine("</body>");
-                    streamWriter.WriteLine("</html>");                    
-                }
-                //returneaza fisierul
+                    streamWriter.WriteLine(imageValue2, i);
+                    streamWriter.WriteLine(imageValue1, i);
+                }                
+
+                streamWriter.WriteLine(imageValue4);
+                streamWriter.WriteLine(imageValue3);
+                streamWriter.WriteLine("</body>");
+                streamWriter.WriteLine("</html>");
+            }
+            //returneaza fisierul
             fileResult = file.ToString();
             return fileResult;
         }
 
-        public static string getFiles()
+        public static List<string> getFiles()
         {
             DirectoryInfo directory = new DirectoryInfo(@"F:\");
             FileInfo[] File = directory.GetFiles();
 
-            
-            foreach(FileInfo file in File.Where(x => x.Extension == ".png" || x.Extension == ".jpg"))
+            var resultList = new List<string>();
+            foreach (FileInfo file in File.Where(x => x.Extension == ".png" || x.Extension == ".jpg"))
             {
-                result = file.Name;
+                //stocheaza in lista
+                resultList.Add(file.Name);
+                //result = file.Name;
             }
+            //returneaza in lista
+            return resultList;
 
-            return result;
+            ///transforma intr-un fisier html
         }
 
     }
