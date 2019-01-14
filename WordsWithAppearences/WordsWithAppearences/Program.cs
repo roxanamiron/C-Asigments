@@ -37,7 +37,17 @@ namespace WordsWithAppearencesAplication
            var sixMeth = workingWithWords.stringList(secondMeth);
 
             Console.WriteLine("\n Write the result list at 6 to another file");            
-           // workingWithWords.writeAnotherFile(sixMeth);
+            workingWithWords.writeAnotherFile(sixMeth);
+
+            Console.WriteLine("\nDecrypt : ");
+           // workingWithWords.readFile(secondMeth);
+
+            Console.WriteLine("\nThe lowercase list:");
+            workingWithWords.lowerList(secondMeth);
+
+            Console.WriteLine("\nCreate the orginal List<string>");
+            workingWithWords.originalList(sixMeth);
+
 
             Console.ReadLine();
         }
