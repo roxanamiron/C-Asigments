@@ -11,25 +11,20 @@ namespace Programing3
         static void Main(string[] args)
         {
             //1.
-            Console.WriteLine("\n Write an expression that checks whether an integer is odd or even");
             Console.WriteLine("\nInput a integer number: ");
             int numb1 = Convert.ToInt32(Console.ReadLine());
             CheckEvenOrOdd(numb1);
 
             //2.
-            Console.WriteLine("\nWrite a Boolean expression that checks whether a given integer is divisible by both 5 and 7, without a remainder.");           
             CheckIfDivisible(numb1);
 
             //3.
-            Console.WriteLine("\nWrite an expression that checks for a given integer if its third digit (right to left) is 7.");
             CheckThirdDigit(numb1);
 
             //4.
-            Console.WriteLine("\nWrite an expression that checks whether the third bit in a given integer is 1 or 0.");
             CheckTheThirdBit(numb1);
 
             //5.
-            Console.WriteLine("\nWrite an expression that calculates the area of a trapezoid by given sides a, b and height h.");
             Console.WriteLine("\nInput side a: ");
            int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\nInput side b: ");
@@ -39,7 +34,6 @@ namespace Programing3
             FindArea(a,b,h);
 
             //6.
-            Console.WriteLine("\nWrite a program that prints on the console the perimeter and the area of a rectangle by given side and height entered by the user.");
             Console.WriteLine("\nInput the length(L): ");
             int L = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("\nInput the width: ");
@@ -52,7 +46,9 @@ namespace Programing3
         }
         static void CheckEvenOrOdd(int numb)
         {
-            if(numb % 2 == 0)
+            Console.WriteLine("\n Write an expression that checks whether an integer is odd or even");
+
+            if (numb % 2 == 0)
             {
                 Console.WriteLine("the numb {0} is even",numb);
             }
@@ -61,7 +57,9 @@ namespace Programing3
         }
         static void CheckIfDivisible(int numb)
         {
-            if((numb % 5 == 0) && (numb % 7 == 0))
+            Console.WriteLine("\nWrite a Boolean expression that checks whether a given integer is divisible by both 5 and 7, without a remainder.");
+
+            if ((numb % 5 == 0) && (numb % 7 == 0))
             {
                 Console.WriteLine("the number {0} is divisible by both 5 and 7",numb);
             }
@@ -70,6 +68,8 @@ namespace Programing3
         }
         static void CheckThirdDigit(int numb)
         {
+            Console.WriteLine("\nWrite an expression that checks for a given integer if its third digit (right to left) is 7.");
+
             //impartim nr la 100,astfel incat thirDigit sa fie primul si apoi il dividem la 10
             int thirDigit = (numb / 100) % 10;
             int numberCheck = 7;
@@ -87,6 +87,7 @@ namespace Programing3
         }
         static void CheckTheThirdBit(int numb)
         {
+            Console.WriteLine("\nWrite an expression that checks whether the third bit in a given integer is 1 or 0.");
 
             var bitNo = Convert.ToString(numb, 2);
             Console.WriteLine("{0} converted in bynary is :{1}", numb, bitNo);
@@ -108,11 +109,14 @@ namespace Programing3
         }
         static void FindArea(int a, int b, int h)
         {
+            Console.WriteLine("\nWrite an expression that calculates the area of a trapezoid by given sides a, b and height h.");
+
             int area = ((a + b) * h) / 2;
             Console.WriteLine("the area of a trapezoid is {0}",area);
         }
         static void FindPerimeterAndArea(int L, int l)
         {
+            Console.WriteLine("\nWrite a program that prints on the console the perimeter and the area of a rectangle by given side and height entered by the user.");
 
         }
 
