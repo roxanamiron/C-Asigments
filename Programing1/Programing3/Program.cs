@@ -117,7 +117,9 @@ namespace Programing3
         static void FindPerimeterAndArea(int L, int l)
         {
             Console.WriteLine("\nWrite a program that prints on the console the perimeter and the area of a rectangle by given side and height entered by the user.");
-
+            int rectanglePerimeter = (2 * L) + (2 * l);
+            int rectangleArea = L + l;
+            Console.WriteLine("the perimeter of a rectangle is: {0} and the area of a rectangle is: {1}",rectanglePerimeter,rectanglePerimeter );
         }
 
     }
