@@ -40,6 +40,8 @@ namespace Programing3
             int l = Convert.ToInt32(Console.ReadLine());
             FindPerimeterAndArea(L,l);
 
+            //7.
+            CalculateWeight();
 
             Console.ReadLine();
 
@@ -121,8 +123,10 @@ namespace Programing3
             int rectangleArea = L + l;
             Console.WriteLine("the perimeter of a rectangle is: {0} and the area of a rectangle is: {1}",rectanglePerimeter,rectanglePerimeter );
         }
-        static void Something()
+        static void CalculateWeight()
         {
+            Console.WriteLine("\n The gravitational field of the Moon is approximately 17% of that on the Earth. Write a program that calculates the weight of a man on the moon " +
+                "by a given weight on the Earth.");
 
         }
 

@@ -38,7 +38,8 @@ namespace Programing2
 
         static void DeclareDatatypes()
         {
-            Console.WriteLine("\nDeclare several variables by selecting for each one of them the most appropriate of the types sbyte, byte, short, ushort, int, uint, long and ulong in order to assign them the following values: 52,130; -115; 4825932; 97; -10000; 20000; 224; 970,700,000; 112; -44; -1,000,000; 1990; 123456789123456789.");
+            Console.WriteLine("\nDeclare several variables by selecting for each one of them the most appropriate of the types sbyte, byte, short, ushort, int, uint, long and" +
+                "ulong in order to assign them the following values: 52,130; -115; 4825932; 97; -10000; 20000; 224; 970,700,000; 112; -44; -1,000,000; 1990; 123456789123456789.");
 
             float dec = 52.130f;
             Console.WriteLine("\nDecimal: {0}",dec);
@@ -59,7 +60,8 @@ namespace Programing2
         }
         static void WhichOf()
         {
-            Console.WriteLine("\nWhich of the following values can be assigned to variables of type float, double and decimal: 5, -5.01, 34.567839023; 12.345; 8923.1234857; 3456.091124875956542151256683467?");
+            Console.WriteLine("\nWhich of the following values can be assigned to variables of type float, double and decimal: 5, -5.01, 34.567839023; 12.345; 8923.1234857;" +
+                "3456.091124875956542151256683467?");
 
             double n1 = -5.01;
             decimal n2 = 34.567839023m;
@@ -77,7 +79,8 @@ namespace Programing2
         }
         static void FindHexadecimal()
         {
-            Console.WriteLine("\nDeclare a variable of type char and assign as a value the character, which has Unicode code, 72 (use the Windows calculator in order to find hexadecimal representation of 72).");
+            Console.WriteLine("\nDeclare a variable of type char and assign as a value the character, which has Unicode code, 72 (use the Windows calculator in order to find" +
+                "hexadecimal representation of 72).");
 
             char ch = 'r';
             int hex = Convert.ToInt32(ch);
@@ -99,7 +102,8 @@ namespace Programing2
         }
         static void DeclareObjectVariable()
         {
-            Console.WriteLine("\nDeclare two variables of type string with values \"Hello\" and \"World\" Declare a variable of type object. Assign to this variable the value obtained of concatenation of the two string variables (add space if necessary). Print the variable of type object\n");
+            Console.WriteLine("\nDeclare two variables of type string with values \"Hello\" and \"World\" Declare a variable of type object. Assign to this variable " +
+                "the value obtained of concatenation of the two string variables (add space if necessary). Print the variable of type object\n");
 
             string str1 = "Hello";
             string str2 = "world";
@@ -108,7 +112,8 @@ namespace Programing2
         }
         static void Usequots()
         {
-            Console.WriteLine("\n Declare two variables of type string and assign them a value “The \"use\" of quotations causes difficulties.” (without the outer quotes). In one of the variables use quoted string and in the other do not use it.\n");
+            Console.WriteLine("\n Declare two variables of type string and assign them a value “The \"use\" of quotations causes difficulties.” (without the outer quotes). " +
+                "In one of the variables use quoted string and in the other do not use it.\n");
 
             string str1 = "The \"use\" of quotations causes difficulties.";
             string str2= "The use of quotations causes difficulties.";
@@ -143,7 +148,8 @@ namespace Programing2
         }
         static void DeclareAppropiateVariable()
         {
-            Console.WriteLine("\nA company dealing with marketing wants to keep a data record of its employees. Each record should have the following characteristic – first name, last name, age, gender (‘m’ or ‘f’) and unique employee number (27560000 to 27569999). Declare appropriate variables needed to maintain the information for an employee by using the appropriate data types and attribute names.");
+            Console.WriteLine("\nA company dealing with marketing wants to keep a data record of its employees. Each record should have the following characteristic – first name, " +
+                "last name, age, gender (‘m’ or ‘f’) and unique employee number (27560000 to 27569999). Declare appropriate variables needed to maintain the information for an employee by using the appropriate data types and attribute names.");
 
             string firstName = "roxana";
             string lastName = "Miron";
