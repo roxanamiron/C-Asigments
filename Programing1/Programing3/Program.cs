@@ -121,6 +121,10 @@ namespace Programing3
             int rectangleArea = L + l;
             Console.WriteLine("the perimeter of a rectangle is: {0} and the area of a rectangle is: {1}",rectanglePerimeter,rectanglePerimeter );
         }
+        static void Something()
+        {
+
+        }
 
     }
 }
