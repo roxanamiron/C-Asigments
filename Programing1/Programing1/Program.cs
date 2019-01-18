@@ -64,7 +64,7 @@ namespace Programing1
             Console.WriteLine("\nWrite a program that prints the first 100 members of the sequence 2, -3, 4, -5, 6, -7, 8.");
             int[] array = { 2, -3, 4, -5, 6, -7, 8 };
             int numberPrint;
-            for (int i = 2; i <= 100; i++)
+            for (int i = 2; i <= 101; i++)
             {
                 if (i % 2 == 0)
                 {

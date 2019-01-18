@@ -6,8 +6,29 @@ using System.Threading.Tasks;
 
 namespace Programing2
 {
-    class Program
+  public  class Program
     {
+        private static char gender;
+        public char Gender
+        {
+            get
+            {
+                return gender;
+            }
+            set
+            {
+                if(value != 'M' && value != 'F' && value != 'm' && value != 'f')
+                {
+                    Console.WriteLine("\nInput invalid. please input a corect gener.");
+                    Console.WriteLine("\nInput a gender: ");
+                    Gender = Convert.ToChar(Console.ReadLine());
+                }
+                else
+                {
+                    value = gender;
+                }
+            }
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("|nPrimitive type & Variables");
@@ -29,7 +50,7 @@ namespace Programing2
 
             printIsoscel();
 
-            DeclareAppropiateVariable();
+            DeclareAppropiateVariable(gender);
         
             ExchangeValue();
 
@@ -50,13 +71,20 @@ namespace Programing2
             byte numb3 = 97;
             Console.WriteLine("\nNumber byte:{0}", numb3);
             int numb4 = -10000;
-            Console.WriteLine("\nNumber int:{0}", numb4);
-            ulong numb5 = 20000;
-            Console.WriteLine("\nNumber ulong:{0}", numb5);
+            Console.WriteLine("\nNumber :{0}", numb4);
+            ushort numb5 = 20000;
+            Console.WriteLine("\nNumber :{0}", numb5);
             long numb6 = -1000000;
             Console.WriteLine("\nNumber long:{0}", numb6);
             long numb7 = 123456789123456789;
             Console.WriteLine("\nNumber long:{0}", numb7);
+            short numb8 = 97;
+            Console.WriteLine("\nNumber {0}", numb8);
+            short numb9 = -10000;
+            Console.WriteLine("\nNumber {0}", numb9);
+            
+            int numb10 = -1000000;
+            Console.WriteLine("\nNumber int:{0}", numb10);
         }
         static void WhichOf()
         {
@@ -76,6 +104,8 @@ namespace Programing2
             string hex = "256";
             int numb = Convert.ToInt32(hex, 16);
             Console.WriteLine("\nhexadecimal value = {0}, int value = {1}",hex,numb);
+            //or
+            Console.WriteLine("\nint value = 256 in hexadecimal format = {0:x} ",254);
         }
         static void FindHexadecimal()
         {
@@ -90,8 +120,8 @@ namespace Programing2
         {
             Console.WriteLine("\nDeclare a variable isMale of type bool and assign a value to it depending on your gender.");
 
-            bool isMale = true;
-            if(!isMale)
+            bool isMale = false;
+            if(isMale)
             {
                 Console.WriteLine("you are a boy");
             }
@@ -146,17 +176,26 @@ namespace Programing2
             Console.WriteLine("  " + ch + "  " + "  "  + ch + "  ");
             Console.WriteLine(ch + "  " + ch + "  " + ch + "  "+ ch);
         }
-        static void DeclareAppropiateVariable()
+        static void DeclareAppropiateVariable(char gender)
         {
             Console.WriteLine("\nA company dealing with marketing wants to keep a data record of its employees. Each record should have the following characteristic – first name, " +
                 "last name, age, gender (‘m’ or ‘f’) and unique employee number (27560000 to 27569999). Declare appropriate variables needed to maintain the information for an employee by using the appropriate data types and attribute names.");
 
-            string firstName = "roxana";
+            string firstName = "Roxana";
             string lastName = "Miron";
-            int age = 33;
-            bool gender = true;
+            sbyte age = 33;
             long uniqueEmployeeNumber = 27560000;
-            Console.WriteLine("\nfirstName {0} and lastName {1} is a string, age {2} is a int, gender {3} is a bool and the uniqueemployeeNumber {4} is a long",firstName,lastName,age,gender,uniqueEmployeeNumber);
+
+            gender = ' ';
+
+            if (gender != 'M' && gender != 'F' && gender != 'm' && gender != 'f')
+            {
+                Console.WriteLine("\nInput a gender: ");
+                gender = Convert.ToChar(Console.ReadLine());
+            }
+           
+
+            Console.WriteLine("\nfirstName {0} and lastName {1} is a string, age {2} is a sbyte, gender {3} is a condition and the uniqueemployeeNumber {4} is a long",firstName,lastName,age,gender,uniqueEmployeeNumber);
 
         }
         static void ExchangeValue()
@@ -165,19 +204,11 @@ namespace Programing2
 
             int val1 = 5;
             int val2 = 10;
-            var random = new Random();
-            int caseSwitch = random.Next(0, 3);
-            switch(caseSwitch)
-            {
-                
-                case 1: Console.WriteLine("Value1 = {0} and Value2 = {1}", val2,val1);
-                    break;
-                case 2: Console.WriteLine("Value2 = {0} and Value1 = {1}", val1,val2);
-                    break;
-                default:
-                    Console.WriteLine("Value1 = {0} and Value2 = {1}", val1, val2);
-                    break;
-            }
+            var temp = val1;
+            val1 = val2;
+            val2 = temp;
+            Console.WriteLine("\n After the exchange val1 ={0} and val2={1}",val1,val2);
+
         }
 
     }
