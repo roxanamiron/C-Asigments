@@ -17,7 +17,9 @@ namespace Programing7
             //3.
             // Compare2Arrays();
             //4.
-            FindMaxim();
+            // FindMaxim();
+            //8.
+            Sorting();
 
             Console.ReadLine();
         }
@@ -100,25 +102,96 @@ namespace Programing7
             Console.WriteLine("\n Write a program, which finds the maximal sequence of consecutive"+
                 "equal elements in an array. E.g.: {1, 1, 2, 3, 2, 2, 2, 1} -> {2, 2, 2}.");
             int[] arr = { 1, 1, 2, 3, 2, 2, 2, 1 };
-            int value = 0;
-
-            for(int i = 0; i < arr.Length; i ++)
+            int start = 0;
+            int length = 0;
+            int bestStart = 0;
+            int bestLength = int.MinValue;
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-                for(int j = i+1; j < arr.Length -1; j++)
+                if ((i == 0) || (arr[i] != arr[i - 1]))
                 {
-                    if(arr[i] == arr[j])
-                    {                        
-                       value = arr[i];                       
-                    }
-                    else
+                    start = i;
+                }
+                if (arr[start] == arr[start + 1])
+                {
+                    length++;
+                    if (length > bestLength)
                     {
-                        break;
+                        bestLength = length;
+                        bestStart = start;
                     }
                 }
+                else
+                {
+                    length = 0;
+                }
+            }
+            Console.Write("The best sequence is :");
+            for (int i = bestStart; i < bestLength + bestStart; i++)
+            {
+                Console.Write(" " + arr[i]);
+            }
+        }
+        static void Sorting()
+        {
+            Console.WriteLine("\nSorting an array means to arrange its elements in an increasing (or decreasing) order."+
+                "Write a program, which sorts an array using the algorithm \"selection sort\".");
+
+            int[] array = { 2, 5, 1, 3, 4 };
+            int smalest = 0;
+            int greater = 0;
+
+            //sort decreasing
+            for (int i = 0; i < array.Length-1;i++)
+            {
+                smalest = i;
+                for(int index = i+1; index < array.Length; index++)
+                {
+                    if (array[index] < array[smalest])
+                    {
+                        smalest = index;
+                    }
+                }
+                if(array[smalest] != i)
+                {
+                    var temporary = array[i];
+                    array[i] = array[smalest];
+                    array[smalest] = temporary;
+                }              
                 
             }
+            foreach (var element in array)
+            {
+                Console.WriteLine("Elements in decreasing order: ");
+                Console.WriteLine(element + " ");
+            }
 
-            //m=am bllocat aici putin...
+            //sort increasing
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                greater = i;
+                for (int index = i + 1; index < array.Length; index++)
+                {
+                    if (array[index] > array[greater])
+                    {
+                        greater = index;
+                    }
+                }
+                if (array[greater] != i)
+                {
+                    var temporary = array[i];
+                    array[i] = array[greater];
+                    array[greater] = temporary;
+                }
+
+            }
+            foreach (var element in array)
+            {
+                Console.WriteLine("Elements in increasing order: ");
+
+                Console.WriteLine(element + " ");
+            }
+
         }
 
     }
