@@ -48,6 +48,9 @@ namespace Programing9
             }
             CheckTheElement(position, array);
 
+            //6.
+
+
             Console.ReadLine();
 
         }
@@ -172,6 +175,22 @@ namespace Programing9
                     }
                 }
             }
+        }
+        static int ReturnThePosition(int[] array)
+        {
+            Console.WriteLine("\nWrite a method that returns the position of the first occurrence of an element from an array, "+
+                "such that it is greater than its two neighbors simultaneously. Otherwise the result must be -1.");
+            int position = 0;
+            for(int i = 0; i< array.Length -1; i++)
+            {
+                if ((array[i] > array[i - 1]) && (array[i] > array[i + 1]))
+                {
+                    position = array[i];
+                    break;
+                }
+            }
+            return position;
+
         }
 
 
