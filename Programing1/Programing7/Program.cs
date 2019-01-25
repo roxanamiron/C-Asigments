@@ -11,13 +11,13 @@ namespace Programing7
         static void Main(string[] args)
         {
             //1.
-            // CreateArray();
+            CreateArray();
             //2.
-            // CheckIfAreEqual();
+            CheckIfAreEqual();
             //3.
-            // Compare2Arrays();
+             Compare2Arrays();
             //4.
-            // FindMaxim();
+             FindMaxim();
             //8.
             Sorting();
 
