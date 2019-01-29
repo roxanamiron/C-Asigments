@@ -11,77 +11,77 @@ namespace Programing9
         static void Main(string[] args)
         {
             //1.
-            //Console.WriteLine("Enter yourName: ");
-            //string yourName = Console.ReadLine();
-            //PrintName(yourName);
+            Console.WriteLine("Enter yourName: ");
+            string yourName = Console.ReadLine();
+            PrintName(yourName);
 
             ////2.
-            //Console.WriteLine("a = ");
-            //int a = int.Parse(Console.ReadLine());
-            //Console.WriteLine("b = ");
-            //int b = int.Parse(Console.ReadLine());
-            //Console.WriteLine("c = ");
-            //int c = int.Parse(Console.ReadLine());
-            //var numbers = GetMax(GetMax(a, b), c);
-            //Console.WriteLine("The maximal numbers is : {0}", numbers);
+            Console.WriteLine("a = ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("b = ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("c = ");
+            int c = int.Parse(Console.ReadLine());
+            var numbers = GetMax(GetMax(a, b), c);
+            Console.WriteLine("The maximal numbers is : {0}", numbers);
 
             ////3.
-            //Console.WriteLine("enter the number: ");
-            //int number = int.Parse(Console.ReadLine());
-            //var numberArray = number.ToString().Select(d => int.Parse(d.ToString())).ToArray();
-            //CheckTheNumber(numberArray);
+            Console.WriteLine("enter the number: ");
+            int numb = int.Parse(Console.ReadLine());
+            var numberArray = numb.ToString().Select(d => int.Parse(d.ToString())).ToArray();
+            CheckTheNumber(numberArray);
 
             ////4.
-            //int[] result = { 1, 3, 5, 1, 4, 9, 1 };
-            //var dict =  FindHowManyTimes(result);
+            int[] result1 = { 1, 3, 5, 1, 4, 9, 1 };
+            var dict = FindHowManyTimes(result1);
 
             ////5.
-            //Console.WriteLine("enter the length of array: ");
-            //int length = int.Parse(Console.ReadLine());
-            //Console.WriteLine("enter the position of a number you want to check");
-            //int position = int.Parse(Console.ReadLine());
-            //int[] array = new int[length];
-            //for (int i = 0; i < length; i++)
-            //{
-            //    Console.WriteLine("enter the element for array: ");
-            //    array[i] = int.Parse(Console.ReadLine());
-            //}
-            //CheckTheElement(position, array);
+            Console.WriteLine("enter the length of array: ");
+            int length1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the position of a number you want to check");
+            int position1 = int.Parse(Console.ReadLine());
+            int[] array1 = new int[length1];
+            for (int i = 0; i < length1; i++)
+            {
+                Console.WriteLine("enter the element for array: ");
+                array1[i] = int.Parse(Console.ReadLine());
+            }
+            CheckTheElement(position1, array1);
 
             //6.
-            //var position = ReturnThePosition(result);
-            //Compare(position);
+            var position2 = ReturnThePosition(result1);
+            Compare(position2);
 
 
             //7.
-            //Console.WriteLine("Enter an number: ");
-            //int number = int.Parse(Console.ReadLine());
-            //Reverse(number);
+            Console.WriteLine("Enter an number: ");
+            int number1 = int.Parse(Console.ReadLine());
+            Reverse(number1);
 
             //8.
-            //Console.WriteLine("Enter the first very long positive integer number: ");
-            //ulong first = ulong.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the second very long positive integer number: ");
-            //ulong second = ulong.Parse(Console.ReadLine());
-            //var firstArr = ReverseFirstArray(first);
-            //var seccondArr = ReverseSecondArray(second);
-            //CalculateTheSum(firstArr, seccondArr);
+            Console.WriteLine("Enter the first very long positive integer number: ");
+            ulong first = ulong.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second very long positive integer number: ");
+            ulong second = ulong.Parse(Console.ReadLine());
+            var firstArr = ReverseFirstArray(first);
+            var seccondArr = ReverseSecondArray(second);
+            CalculateTheSum(firstArr, seccondArr);
 
             //9.
-            //Console.WriteLine("enter the length of array: ");
-            //int length = int.Parse(Console.ReadLine());
-            //int[] array = new int[length];
-            //for (int i = 0; i < length; i++)
-            //{
-            //    Console.WriteLine("enter the element for array: ");
-            //    array[i] = int.Parse(Console.ReadLine());
-            //}
-            //SortingDescending(array);
+            Console.WriteLine("enter the length of array: ");
+            int length2 = int.Parse(Console.ReadLine());
+            int[] array2 = new int[length2];
+            for (int i = 0; i < length2; i++)
+            {
+                Console.WriteLine("enter the element for array: ");
+                array2[i] = int.Parse(Console.ReadLine());
+            }
+            SortingDescending(array2);
 
             //10.
-            //Console.WriteLine("Input a number between [1...100]");
-            //int number = int.Parse(Console.ReadLine());
-            //CalculateFactorial(number);
+            Console.WriteLine("Input a number between [1...100]");
+            int number2 = int.Parse(Console.ReadLine());
+            CalculateFactorial(number2);
 
             //11.
             Console.WriteLine("\nWrite a program that solves the following tasks:" +
@@ -95,10 +95,75 @@ namespace Programing9
                         "-The integer number must be a positive in the range[1…50, 000, 000]." +
                         "- The sequence of numbers cannot be empty." +
                         "- The coefficient a must be non - zero.) ");
-            Console.WriteLine("Input an integer number");
-            int number = int.Parse(Console.ReadLine());
-            //ReverseNumber(number);
-            Average(number);
+            Console.WriteLine("\n############ MENU ###############");
+            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("Chose one of the operations: " + Environment.NewLine);
+            Console.WriteLine("1 – Reverse : - Put the digits from an integer number into a reversed order. " +
+                "\n2 – Average: - Calculate the average of given sequence of numbers." +
+                "\n3 – Equation:  Solve the linear equation a * x + b = 0.");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+            int input = int.Parse(Console.ReadLine());
+            bool isValidate = ValidateOperations(input);
+
+            if (isValidate)
+            {
+                if (input == 1)
+                {
+                    Console.WriteLine("Input an positive integer number");
+                    int number = int.Parse(Console.ReadLine());
+                    if ((number < 0) && (number > 50000000))
+                    {
+                        Console.WriteLine("Inccorect input");
+                    }
+                    Console.WriteLine("Reverse");
+                    ReverseNumber(number);
+                }
+                else if (input == 2)
+                {
+                    Console.WriteLine("Input an positive integer number");
+                    int number = int.Parse(Console.ReadLine());
+                    if ((number < 0) && (number > 50000000))
+                    {
+                        Console.WriteLine("Inccorect input");
+                    }
+                    Console.WriteLine("Average");
+                    CalculateAverage(number);
+                }
+                else if (input == 3)
+                {
+                    Console.WriteLine("Equation");
+                    CalculateEquation();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Incorect input !");
+            }
+
+            //12.
+            //polynomials for (3x2 + x - 3) + (x - 1)
+            int[] A = { 3, 1, -3, 1, -1 };
+            //polynomials for (3x2 + 2x - 4)
+            int[] B = { 3, 2, -4 };
+            int n1 = A.Length;
+            int n2 = B.Length;
+            int[] sum = CalculateTheSumOfPolynomials(A, B, n1, n2);
+            int size = GetMax(n1, n2);
+            Print(sum, size);
+
+            //13.
+            //polynomials for (3x2 + x - 3) * (x - 1)
+            int[] C = { 3, 1, -3, 1, -1 };
+            //polynomials for (3x3 - 2x2 - 4x + 3)
+            int[] D = { 3, 2, 4, 3 };
+            int m1 = A.Length;
+            int m2 = B.Length;
+            int[] product = CalculateTheProduct(C, D, m1, m2);
+            int sizeP = GetMax(m1, m2);
+            PrintProduct(product, sizeP);
+
+
             Console.ReadLine();
 
         }
@@ -361,26 +426,132 @@ namespace Programing9
 
             return factorial;
         }
-        static int ReverseNumber(int n)
+        static void ReverseNumber(int n)
         {
             int result = 0;
-            while(n > 0)
+            while (n > 0)
             {
-                result= result *10 + n % 10;
+                result = result * 10 + n % 10;
                 n = n / 10;
             }
-            return result;
+            Console.WriteLine("Result = " + result);
         }
-        static int Average(int n)
+        static void CalculateAverage(int n)
         {
             int[] array = n.ToString().Select(x => int.Parse(x.ToString())).ToArray();
             int sum = 0;
-            for(int i = 0; i< array.Length; i++)
+            int average = 0;
+            int length = array.Length;
+            for (int i = 0; i < array.Length; i++)
             {
                 sum += array[i];
+                average = sum / length;
             }
+            Console.WriteLine("Average = " + average);
+        }
+        static void CalculateEquation()
+        {
+            int a = 0;
+            float equation = 0;
+
+            do
+            {
+                Console.WriteLine("Input a = ");
+                a = int.Parse(Console.ReadLine());
+                if ((a < 0) && (a > 50000000))
+                {
+                    Console.WriteLine("Inccorect input");
+                }
+            } while (a == 0);
+
+            Console.WriteLine("Input b = ");
+            int b = int.Parse(Console.ReadLine());
+            if ((b < 0) && (b > 50000000))
+            {
+                Console.WriteLine("Inccorect input");
+            }
+
+            float x = (float)-b / a;
+            equation = (float)a * x + b;
+            Console.WriteLine("The linear equation a* {0} + b = 0 is : ", equation);
+
+        }
+        static bool ValidateOperations(int input)
+        {
+            bool result = (input >= 1) && (input <= 3);
+            return result;
+        }
+        static int[] CalculateTheSumOfPolynomials(int[] A, int[] B, int n1, int n2)
+        {
+            Console.WriteLine("\n Write a method that calculates the sum of two polynomials with integer coefficients," +
+                "for example (3x2 + x - 3) + (x - 1) = (3x2 + 2x - 4).");
+            
+            int size = GetMax(n1, n2);
+            int[] sum = new int[size];
+
+            for(int i = 0; i< n1; i++)
+            {
+                sum[i] = A[i];
+            }
+            for(int i = 0; i < n2; i++)
+            {
+                sum[i] = B[i];
+            }
+
             return sum;
-           
+        }
+
+        static void Print(int[] sum, int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(sum[i]);
+                if (i != 0)
+                {
+                    Console.Write("x^" + i);
+                }
+                if (i != n - 1)
+                {
+                    Console.Write(" + ");
+                }
+            }
+
+        }
+        static int[] CalculateTheProduct(int[] A, int[] B, int n1, int n2)
+        {
+            Console.WriteLine("\nWrite a method that calculates the product of two polynomials with "+
+                "integer coefficients, for example (3x2 + x - 3) * (x - 1) = (3x3 - 2x2 - 4x + 3).");
+
+            
+            int size = GetMax(n1, n2);
+            int[] product = new int[size];
+
+            for(int i = 0; i < n1; i++)
+            {
+                product[i] = A[i];
+            }
+            for (int i = 0; i < n2; i++)
+            {
+                product[i] = B[i];
+            }
+            return product;
+
+        }
+        static void PrintProduct(int[] product, int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(product[i]);
+                if (i != 0)
+                {
+                    Console.Write("x^" + i);
+                }
+                if (i != n - 1)
+                {
+                    Console.Write(" * ");
+                }
+            }
+
         }
 
     }
