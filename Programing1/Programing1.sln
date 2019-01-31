@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programing9", "Programing9\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programing11", "Programing11\Programing11.csproj", "{7A08E3D0-C11F-4C2B-9FC7-90E6484C699B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingAndUsingObjects", "CreatingAndUsingObjects\CreatingAndUsingObjects.csproj", "{504013A4-A06F-4D15-8D98-33A3326C9B58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{7A08E3D0-C11F-4C2B-9FC7-90E6484C699B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A08E3D0-C11F-4C2B-9FC7-90E6484C699B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A08E3D0-C11F-4C2B-9FC7-90E6484C699B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504013A4-A06F-4D15-8D98-33A3326C9B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504013A4-A06F-4D15-8D98-33A3326C9B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504013A4-A06F-4D15-8D98-33A3326C9B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504013A4-A06F-4D15-8D98-33A3326C9B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
