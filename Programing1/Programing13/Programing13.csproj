@@ -43,13 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckIfItIsCorrect.cs" />
+    <Compile Include="EcryptAString.cs" />
     <Compile Include="Exemple.cs" />
+    <Compile Include="ExtractText.cs" />
+    <Compile Include="ForbiddenWords.cs" />
+    <Compile Include="ParseAnURL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadANumber.cs" />
     <Compile Include="ReverseString.cs" />
+    <Compile Include="ReverseTheWordsInASentence.cs" />
+    <Compile Include="TransformAString.cs" />
     <Compile Include="UpperCaseLetters.cs" />
+    <Compile Include="UsingRegularExpression.cs" />
     <Compile Include="UsingSplit.cs" />
     <Compile Include="UsingSubstring.cs" />
+    <Compile Include="WorkingWithDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

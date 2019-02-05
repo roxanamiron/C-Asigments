@@ -35,6 +35,43 @@ namespace Programing13
             //UpperCaseLetters upper = new UpperCaseLetters();
             //upper.ModifiesTheCasing(text3);
 
+            //7.
+            //UsingRegularExpression regex = new UsingRegularExpression();
+            //regex.Display();
+
+            //8.
+            //TransformAString convert = new TransformAString();
+            //convert.ConvertTheString();
+
+            //9.
+            //EcryptAString encrypt = new EcryptAString();
+            //encrypt.Display();
+
+            //10.
+            //ExtractText extract = new ExtractText();
+            //extract.Extract();
+
+            //11.
+            //ForbiddenWords words = new ForbiddenWords();
+            //words.ReplaceTheForbidden();
+
+            //12.
+            //ReadANumber read = new ReadANumber();
+            //read.ConvertNumber();
+
+            //13.
+            //ParseAnURL parse = new ParseAnURL();
+            //parse.SplitUrl();
+
+            //14.
+            //ReverseTheWordsInASentence reverseWords = new ReverseTheWordsInASentence();
+            //reverseWords.ReverseMethod();
+
+            //15.
+            WorkingWithDictionary explanation = new WorkingWithDictionary();
+            Console.WriteLine("\nEnter a word: ");
+            string word = Console.ReadLine();
+            explanation.ReadWords(word);
             Console.ReadLine();
         }
 
