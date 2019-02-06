@@ -68,10 +68,54 @@ namespace Programing13
             //reverseWords.ReverseMethod();
 
             //15.
-            WorkingWithDictionary explanation = new WorkingWithDictionary();
-            Console.WriteLine("\nEnter a word: ");
-            string word = Console.ReadLine();
-            explanation.ReadWords(word);
+            //WorkingWithDictionary explanation = new WorkingWithDictionary();
+            //Console.WriteLine("\nEnter a word: ");
+            //string word = Console.ReadLine();
+            //explanation.ReadWords(word);
+
+            //16.
+            //Hyperlinks hyper = new Hyperlinks();
+            //hyper.ReplaceTheText();
+
+            //17.
+            //DateTimeClass date = new DateTimeClass();
+            //date.ReadDate();
+
+            //18.
+            //AnotherDate date2 = new AnotherDate();
+            //date2.ReadADate();
+
+            //19.
+            //ExtractEmail extract = new ExtractEmail();
+            //extract.Extract();
+
+            //20.
+            //ExtractAllDates exDate = new ExtractAllDates();
+            //exDate.ExtractDate();
+
+            //21.
+            //PalindromesWords palindrome = new PalindromesWords();
+            //palindrome.ExtractPalindrom();
+
+            //22.
+            //AlphabeticalOrder aplha = new AlphabeticalOrder();
+            //aplha.PrintAlphabeticalOrderAllLetters();
+
+            //23.
+            //AlphabeticalOrder aplha2 = new AlphabeticalOrder();
+            //aplha2.PrintAlphabeticalOrderAllWords();
+
+            //24.
+            //RepeatingLetter repeat = new RepeatingLetter();
+            //repeat.TrimTheRepeatingLetter();
+
+
+            //25.
+            //ListOfWords listofWords = new ListOfWords();
+            //listofWords.PrintTheList();
+
+            //26.
+
             Console.ReadLine();
         }
 

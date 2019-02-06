@@ -10,6 +10,23 @@ namespace Programing13
     {
         Dictionary<string, string> dict = new Dictionary<string, string>();
         private static string word;
+        private static string explination;
+
+        public string Word
+        {
+            get { return word; }
+            set { value = word; }
+        }
+        public string Explination
+        {
+            get { return explination; }
+            set { value = explination; }
+        }
+        public WorkingWithDictionary()
+        {
+            Word = word;
+            Explination = explination;
+        }
         public void Create()
         {           
             dict.Add(".NET", "- platform for applications from Microsoft");
@@ -19,19 +36,18 @@ namespace Programing13
         public void ReadWords(string word)
         {
            Create();
-        
-            foreach (var w in dict)
+        foreach(var item in dict)
             {
-                if (w.Key.Contains(word))
+                if (item.Key.Contains(word))
                 {
-                    
-                    Console.WriteLine(word, w.Value.ToString());
+                    Console.WriteLine("{0} {1}", word, item.Value);
                 }
                 else
                 {
-                    Console.WriteLine("The word is not into the dictionary");
+                    Console.WriteLine("Word not found");
                 }
             }
+           
         }
     }
 }

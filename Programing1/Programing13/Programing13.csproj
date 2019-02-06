@@ -42,15 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlphabeticalOrder.cs" />
+    <Compile Include="AnotherDate.cs" />
     <Compile Include="CheckIfItIsCorrect.cs" />
+    <Compile Include="DateTimeClass.cs" />
     <Compile Include="EcryptAString.cs" />
     <Compile Include="Exemple.cs" />
+    <Compile Include="ExtractAllDates.cs" />
+    <Compile Include="ExtractAllTheText.cs" />
+    <Compile Include="ExtractEmail.cs" />
     <Compile Include="ExtractText.cs" />
     <Compile Include="ForbiddenWords.cs" />
+    <Compile Include="Hyperlinks.cs" />
+    <Compile Include="ListOfWords.cs" />
+    <Compile Include="PalindromesWords.cs" />
     <Compile Include="ParseAnURL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadANumber.cs" />
+    <Compile Include="RepeatingLetter.cs" />
     <Compile Include="ReverseString.cs" />
     <Compile Include="ReverseTheWordsInASentence.cs" />
     <Compile Include="TransformAString.cs" />
