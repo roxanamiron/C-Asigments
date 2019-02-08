@@ -10,23 +10,7 @@ namespace Programing13
     {
         Dictionary<string, string> dict = new Dictionary<string, string>();
         private static string word;
-        private static string explination;
-
-        public string Word
-        {
-            get { return word; }
-            set { value = word; }
-        }
-        public string Explination
-        {
-            get { return explination; }
-            set { value = explination; }
-        }
-        public WorkingWithDictionary()
-        {
-            Word = word;
-            Explination = explination;
-        }
+     
         public void Create()
         {           
             dict.Add(".NET", "- platform for applications from Microsoft");
