@@ -375,6 +375,8 @@ namespace Programing_6
                 {
                     a %= b;
                 }
+
+
                 else
                 {
                     b %= a;

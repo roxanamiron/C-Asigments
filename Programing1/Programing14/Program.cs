@@ -103,12 +103,65 @@ namespace Programing14
             //phone5.TotalAmountOfCalls(0.20);
 
             //19.
-            Console.WriteLine("\nCreate a class GSMCallHistoryTest, with which to test the functionality of the class GSM, "+
-                "from task 12, as an object of type GSM. Then add to it a few phone calls (Call). Display information about "+
-                "each phone call. Assuming that the price per minute is 0.37, calculate and display the total cost of all calls."+
-                "Remove the longest conversation from archive with phone calls and calculate the total price for all calls again. "+
-                "Finally, clear the archive.");
+            //Console.WriteLine("\nCreate a class GSMCallHistoryTest, with which to test the functionality of the class GSM, "+
+            //    "from task 12, as an object of type GSM. Then add to it a few phone calls (Call). Display information about "+
+            //    "each phone call. Assuming that the price per minute is 0.37, calculate and display the total cost of all calls."+
+            //    "Remove the longest conversation from archive with phone calls and calculate the total price for all calls again. "+
+            //    "Finally, clear the archive.");
+            //GSMCallHistoryTest test = new GSMCallHistoryTest();
+            //test.TestFunctionality3();
 
+            //20.
+            // Console.WriteLine("\nThere is a book library. Define classes respectively for a book and a library. The library must contain " +
+
+            //     "a name and a list of books. The books must contain the title, author, publisher, release date and ISBN-number. In the class, " +
+            //     "which describes the library, create methods to add a book to the library, to search for a book by a predefined author, to display " +
+            //     "information about a book and to delete a book from the library.");
+
+
+            //21.
+            //Console.WriteLine("\nWrite a test class, which creates an object of type library, adds several books to it and "+
+            //    "displays information about each of them. Implement a test functionality, which finds all books authored by "+
+            //    "Homer and deletes them. Finally, display information for each of the remaining books.");
+            //TestLibrary testLibrary = new TestLibrary();
+            //testLibrary.TestLibraryBooks();
+
+            //22.
+            //Console.WriteLine("\nWe have a school. In school we have classes and students. Each class has a number of teachers. "+
+            //    "Each teacher has a variety of disciplines taught. Students have a name and a unique number in the class. Classes "+
+            //    "have a unique text identifier. Disciplines have a name, number of lessons and number of exercises. The task is to "+
+            //    "shape a school with C# classes. You have to define classes with their fields, properties, methods and constructors."+
+            //    "Also define a test class, which demonstrates, that the other classes work correctly.");
+
+            //TestSchool testSchhol = new TestSchool();
+            //testSchhol.TestSchoolFunctionality();
+
+            //23.
+            //Console.WriteLine("\nWrite a generic class GenericList<T>, which holds a list of elements of type T. "+
+            //    "Store the list of elements into an array with a limited capacity that is passed as a parameter of "+
+            //    "the constructor of the class. Add methods to add an item, to access an item by index, to remove an item "+
+            //    "by index, to insert an item at given position, to clear the list, to search for an item by value and to "+
+            //    "override the method ToString().");
+            //GenericList<int> newGeneric = new GenericList<int>();
+            //Console.WriteLine("Capacity: {0} , Count: {1} ", newGeneric.Capacity, newGeneric.Count);
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    newGeneric.AddItem(i+5);
+            //    newGeneric.RemoveAnItemByIndex(i);
+            //}
+
+            //25.
+            Console.WriteLine("\n Define a class Fraction, which contains information about the rational fraction "+
+                "(e.g. ¼ or ½). Define a static method Parse() to create a fraction from a sting (for example -3/4). "+
+                "Define the appropriate properties and constructors of the class. Also write property of type Decimal"+
+                "to return the decimal value of the fraction (e.g. 0.25).");
+            Console.WriteLine("\n26.nWrite a class FractionTest, which tests the functionality of the class Fraction from "+
+                "previous task. Pay close attention on testing the function Parse with different input data.");
+
+            TestFractional testFractional = new TestFractional();
+            testFractional.TestFractionalOperations();
+
+            //27.
 
 
             Console.ReadLine();

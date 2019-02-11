@@ -17,10 +17,24 @@ namespace Programing14
         private Screen Screen { get; set; }
 
         public List<Call> CallHistory = new List<Call>();
+        private string v1;
+        private string v2;
+        private int v3;
+        private string v4;
+
         public Phone()
         {            
             Phone.nokiaN95 = "Model Nokia 95";
         }
+
+        public Phone(string v1, string v2, int v3, string v4)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
+            this.v4 = v4;
+        }
+
         public void Display()
         {
             Console.WriteLine("the model of the phone is " + Phone.nokiaN95);
@@ -61,6 +75,15 @@ namespace Programing14
             decimal totalPrice = pricePerMinutes * (Math.Ceiling(wholeTime / 60));
             Console.WriteLine("total price = " + totalPrice);
 
+        }
+        public void PrintCall()
+        {
+            for(int i = 0; i< CallHistory.Count; i++)
+            {
+                Console.WriteLine("DateTime Time: " + CallHistory[i].Date);
+                Console.WriteLine("start time: " +CallHistory[i].StartTime);
+                Console.WriteLine("Duration: " + CallHistory[i].Duration);
+            }
         }
 
     }
