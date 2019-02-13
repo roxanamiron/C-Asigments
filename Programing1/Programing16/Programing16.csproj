@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2538AC1D-53F0-45A0-85CE-7263FBCDCDD3}</ProjectGuid>
+    <ProjectGuid>{10EE7F9F-613F-4D38-9F1D-BFAD4FB92E4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Programing15</RootNamespace>
-    <AssemblyName>Programing15</AssemblyName>
+    <RootNamespace>Programing16</RootNamespace>
+    <AssemblyName>Programing16</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,20 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompareTwoFiles.cs" />
-    <Compile Include="DeleteAllTestWords.cs" />
+    <Compile Include="Exemple1.cs" />
+    <Compile Include="Exemple2.cs" />
+    <Compile Include="Exemple3.cs" />
+    <Compile Include="Exemple4.cs" />
+    <Compile Include="Exemple5.cs" />
     <Compile Include="Exemples.cs" />
-    <Compile Include="ExtractTextFromXmlFile.cs" />
-    <Compile Include="InsertLineNumbers.cs" />
-    <Compile Include="JoinAndRecordAFile.cs" />
-    <Compile Include="ListOfNames.cs" />
-    <Compile Include="OccurenceWords.cs" />
-    <Compile Include="Oddlines.cs" />
-    <Compile Include="PrintOddLines.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReplaceOccurenceOfASubstring.cs" />
-    <Compile Include="SquareMatrixOfIntegers.cs" />
+    <Compile Include="ReverseOrder.cs" />
+    <Compile Include="SequenceOfPositiveNumbers.cs" />
+    <Compile Include="SortedNumbers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

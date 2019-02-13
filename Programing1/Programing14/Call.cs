@@ -18,5 +18,9 @@ namespace Programing14
             this.StartTime = startTime;
             this.Duration = duration;
         }
+        public Call()
+        {
+
+        }
     }
 }
