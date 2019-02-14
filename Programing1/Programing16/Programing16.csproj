@@ -42,17 +42,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircularQueue.cs" />
+    <Compile Include="Deque.cs" />
+    <Compile Include="DoublyLinkedList.cs" />
+    <Compile Include="DynamicStack.cs" />
     <Compile Include="Exemple1.cs" />
     <Compile Include="Exemple2.cs" />
     <Compile Include="Exemple3.cs" />
     <Compile Include="Exemple4.cs" />
     <Compile Include="Exemple5.cs" />
     <Compile Include="Exemples.cs" />
+    <Compile Include="LongestSubsequenceOfEqualNumbers.cs" />
+    <Compile Include="MajorantOfAnArray.cs" />
+    <Compile Include="NegativeNumbers.cs" />
+    <Compile Include="NumbersOccurences.cs" />
+    <Compile Include="OddNumbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseOrder.cs" />
     <Compile Include="SequenceOfPositiveNumbers.cs" />
+    <Compile Include="ShortestSubsequence.cs" />
     <Compile Include="SortedNumbers.cs" />
+    <Compile Include="UsingQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

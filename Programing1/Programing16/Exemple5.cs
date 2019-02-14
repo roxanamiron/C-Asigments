@@ -33,12 +33,12 @@
 //            que.Enqueue(n);
 //            int index = 0;
 //            Console.WriteLine("S = ");
-//            while(que.Count > 0)
+//            while (que.Count > 0)
 //            {
 //                index++;
 //                int current = que.Dequeue();
 //                Console.WriteLine(" " + current);
-//                if(current == p)
+//                if (current == p)
 //                {
 //                    Console.WriteLine();
 //                    Console.WriteLine("Index = " + index);

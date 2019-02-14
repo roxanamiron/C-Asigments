@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CompareTwoFiles.cs" />
     <Compile Include="DeleteAllTestWords.cs" />
+    <Compile Include="DynamicStack.cs" />
     <Compile Include="Exemples.cs" />
     <Compile Include="ExtractTextFromXmlFile.cs" />
     <Compile Include="InsertLineNumbers.cs" />
